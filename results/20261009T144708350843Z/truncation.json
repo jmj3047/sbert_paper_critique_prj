@@ -1,0 +1,30 @@
+{
+  "stsb": {
+    "bert": {
+      "unique_sentences": 2552,
+      "truncated_sentences": 0,
+      "truncation_rate": 0.0,
+      "max_untruncated_tokens": 46
+    },
+    "sbert": {
+      "unique_sentences": 2552,
+      "truncated_sentences": 0,
+      "truncation_rate": 0.0,
+      "max_untruncated_tokens": 46
+    }
+  },
+  "biosses": {
+    "bert": {
+      "unique_sentences": 183,
+      "truncated_sentences": 0,
+      "truncation_rate": 0.0,
+      "max_untruncated_tokens": 95
+    },
+    "sbert": {
+      "unique_sentences": 183,
+      "truncated_sentences": 0,
+      "truncation_rate": 0.0,
+      "max_untruncated_tokens": 95
+    }
+  }
+}

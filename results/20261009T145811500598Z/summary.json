@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "ebmsass",
+    "model": "bert_mean",
+    "n": 1000,
+    "spearman": 0.5188676471727632,
+    "pearson": 0.5240652991084808,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.4645565748533045,
+        0.5676751953454611
+      ],
+      "pearson": [
+        0.4745359756417752,
+        0.5687622032600601
+      ]
+    },
+    "paper_spearman_x100": null,
+    "difference_from_paper_points": null
+  },
+  {
+    "dataset": "ebmsass",
+    "model": "bert_cls",
+    "n": 1000,
+    "spearman": 0.511389963484443,
+    "pearson": 0.5233489053844098,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.4580677023878422,
+        0.5620597375140389
+      ],
+      "pearson": [
+        0.4776509825123342,
+        0.5662148692412163
+      ]
+    },
+    "paper_spearman_x100": null,
+    "difference_from_paper_points": null
+  },
+  {
+    "dataset": "ebmsass",
+    "model": "sbert_mean",
+    "n": 1000,
+    "spearman": 0.5631708236330375,
+    "pearson": 0.6017921743043242,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.5133852939195475,
+        0.6061698197115936
+      ],
+      "pearson": [
+        0.5612243935683545,
+        0.6395667243145715
+      ]
+    },
+    "paper_spearman_x100": null,
+    "difference_from_paper_points": null
+  }
+]

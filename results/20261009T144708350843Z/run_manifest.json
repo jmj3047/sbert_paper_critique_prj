@@ -1,0 +1,62 @@
+{
+  "arguments": {
+    "download_only": false,
+    "device": "mps",
+    "batch_size": 16,
+    "max_length": 128,
+    "bootstrap": 2000,
+    "seed": 42,
+    "limit": null
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.10.13",
+  "models": {
+    "bert": {
+      "repo": "google-bert/bert-base-uncased",
+      "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+    },
+    "sbert": {
+      "repo": "sentence-transformers/bert-base-nli-mean-tokens",
+      "revision": "160a52b38a51ae87295ec3eabcf11755e5d27a8d"
+    }
+  },
+  "datasets": {
+    "stsb": {
+      "repo": "sentence-transformers/stsb",
+      "revision": "ab7a5ac0e35aa22088bdcf23e7fd99b220e53308",
+      "split": "test",
+      "expected_rows": 1379,
+      "gold_scale": 5.0,
+      "files": [
+        {
+          "local": "stsb-0.parquet",
+          "url": "https://huggingface.co/datasets/sentence-transformers/stsb/resolve/ab7a5ac0e35aa22088bdcf23e7fd99b220e53308/data/test-00000-of-00001.parquet",
+          "sha256": "8acbc291c50977d8655934952956016c3e049c2fe04f8a6c454c1bf6acc42ca1"
+        }
+      ]
+    },
+    "biosses": {
+      "repo": "tabilab/biosses",
+      "revision": "2394a2eda8dae34a30f68f0770775fd5c2e863bd",
+      "split": "train",
+      "expected_rows": 100,
+      "gold_scale": 1.0,
+      "files": [
+        {
+          "local": "biosses-0.parquet",
+          "url": "https://huggingface.co/datasets/tabilab/biosses/resolve/2394a2eda8dae34a30f68f0770775fd5c2e863bd/data/train-00000-of-00001.parquet",
+          "sha256": "b2462db0d88a86b3964a51eb8b2b70390e4d443671be4efafe5283e368e809c7"
+        }
+      ]
+    }
+  },
+  "smoke_test_only": false,
+  "versions": {
+    "torch": "2.13.0",
+    "transformers": "4.44.2",
+    "huggingface-hub": "0.36.2",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pyarrow": "21.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+# 원본 데이터
+/data/
+
+# 원본 문장이 포함된 예측 파일
+/results/**/*_predictions.csv
+
+# 최종 실행 두 개만 포함
+/results/*
+!/results/20261009T144708350843Z/
+!/results/20261009T145811500598Z/
+
+# 캐시와 로컬 환경
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+.env
+.env.*
+
+# 문서와 발표 자료
+*.docx
+*.pptx
+~$*
+/presentation/

@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "stsb",
+    "model": "bert_mean",
+    "n": 1379,
+    "spearman": 0.4728974611520108,
+    "pearson": 0.4790404994668164,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.43102153737200855,
+        0.51328924288442
+      ],
+      "pearson": [
+        0.4379567575563788,
+        0.5171503509342332
+      ]
+    },
+    "paper_spearman_x100": 46.35,
+    "difference_from_paper_points": 0.939746115201082
+  },
+  {
+    "dataset": "stsb",
+    "model": "bert_cls",
+    "n": 1379,
+    "spearman": 0.20306432723108672,
+    "pearson": 0.1718340761619145,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.1525765916989243,
+        0.2548193858207935
+      ],
+      "pearson": [
+        0.11940240362128117,
+        0.22367778316602496
+      ]
+    },
+    "paper_spearman_x100": 16.5,
+    "difference_from_paper_points": 3.8064327231086708
+  },
+  {
+    "dataset": "stsb",
+    "model": "sbert_mean",
+    "n": 1379,
+    "spearman": 0.7698533893459256,
+    "pearson": 0.7414262715647391,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.745409434211071,
+        0.7924900874474183
+      ],
+      "pearson": [
+        0.7167116022386321,
+        0.7629705617285775
+      ]
+    },
+    "paper_spearman_x100": 77.03,
+    "difference_from_paper_points": -0.04466106540743908
+  },
+  {
+    "dataset": "biosses",
+    "model": "bert_mean",
+    "n": 100,
+    "spearman": 0.5449975861225113,
+    "pearson": 0.5326028561525677,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.3919059269906787,
+        0.6673078813520524
+      ],
+      "pearson": [
+        0.39818973316223233,
+        0.6450389864595367
+      ]
+    },
+    "paper_spearman_x100": null,
+    "difference_from_paper_points": null
+  },
+  {
+    "dataset": "biosses",
+    "model": "bert_cls",
+    "n": 100,
+    "spearman": 0.6342622509966503,
+    "pearson": 0.5732924772158022,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.5003839734462275,
+        0.7378933099167938
+      ],
+      "pearson": [
+        0.4349822066630177,
+        0.693040900881081
+      ]
+    },
+    "paper_spearman_x100": null,
+    "difference_from_paper_points": null
+  },
+  {
+    "dataset": "biosses",
+    "model": "sbert_mean",
+    "n": 100,
+    "spearman": 0.519877215456756,
+    "pearson": 0.5170168776682932,
+    "ci95": {
+      "valid_resamples": 2000,
+      "spearman": [
+        0.3477387768753882,
+        0.6590003879627993
+      ],
+      "pearson": [
+        0.3531303581509725,
+        0.6519606386367173
+      ]
+    },
+    "paper_spearman_x100": null,
+    "difference_from_paper_points": null
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "ebmsass": {
+    "bert": {
+      "unique_sentences": 1238,
+      "truncated_sentences": 0,
+      "truncation_rate": 0.0,
+      "max_untruncated_tokens": 98
+    },
+    "sbert": {
+      "unique_sentences": 1238,
+      "truncated_sentences": 0,
+      "truncation_rate": 0.0,
+      "max_untruncated_tokens": 98
+    }
+  }
+}

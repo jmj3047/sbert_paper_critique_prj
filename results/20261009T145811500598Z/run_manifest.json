@@ -1,0 +1,77 @@
+{
+  "arguments": {
+    "download_only": false,
+    "datasets": [
+      "ebmsass"
+    ],
+    "device": "mps",
+    "batch_size": 16,
+    "max_length": 128,
+    "bootstrap": 2000,
+    "seed": 42,
+    "limit": null
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.10.13",
+  "models": {
+    "bert": {
+      "repo": "google-bert/bert-base-uncased",
+      "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+    },
+    "sbert": {
+      "repo": "sentence-transformers/bert-base-nli-mean-tokens",
+      "revision": "160a52b38a51ae87295ec3eabcf11755e5d27a8d"
+    }
+  },
+  "datasets": {
+    "ebmsass": {
+      "repo": "HamedHassanzadeh/EBMSASS",
+      "revision": "87b014442f1d6cf9b488fb496591649354e92c10",
+      "split": "all_zero_shot",
+      "format": "ebmsass_tsv",
+      "expected_rows": 1000,
+      "gold_scale": 1.0,
+      "files": [
+        {
+          "local": "ebmsass-background.txt",
+          "url": "https://raw.githubusercontent.com/HamedHassanzadeh/EBMSASS/87b014442f1d6cf9b488fb496591649354e92c10/background_pairs.txt",
+          "category": "background",
+          "sha256": "abb2d4cd84ee98f1f70ed5ac88171c1fc5c524afde40b575e185b4da2b9248fb"
+        },
+        {
+          "local": "ebmsass-intervention.txt",
+          "url": "https://raw.githubusercontent.com/HamedHassanzadeh/EBMSASS/87b014442f1d6cf9b488fb496591649354e92c10/intervention_pairs.txt",
+          "category": "intervention",
+          "sha256": "4de5833cbe68972aaa8110d047009b7313b0b49b78a7863633f70a425637eee9"
+        },
+        {
+          "local": "ebmsass-outcome.txt",
+          "url": "https://raw.githubusercontent.com/HamedHassanzadeh/EBMSASS/87b014442f1d6cf9b488fb496591649354e92c10/outcome_pairs.txt",
+          "category": "outcome",
+          "sha256": "02e5873e95ddae650f52fa6974a5c1ef7766444f68e1e94067d5a5142621c003"
+        },
+        {
+          "local": "ebmsass-population.txt",
+          "url": "https://raw.githubusercontent.com/HamedHassanzadeh/EBMSASS/87b014442f1d6cf9b488fb496591649354e92c10/population_pairs.txt",
+          "category": "population",
+          "sha256": "1c82f7fa4d77796dbb9ad89ea29ef3f79d8c45fa3e93b89c9cdc87cd63ded78e"
+        },
+        {
+          "local": "ebmsass-study_design.txt",
+          "url": "https://raw.githubusercontent.com/HamedHassanzadeh/EBMSASS/87b014442f1d6cf9b488fb496591649354e92c10/study_design_pairs.txt",
+          "category": "study_design",
+          "sha256": "56180734bfaea16d0eef7b82b7af264b4aecdca356e96ab5db3ae85d23e98e0b"
+        }
+      ]
+    }
+  },
+  "smoke_test_only": false,
+  "versions": {
+    "torch": "2.13.0",
+    "transformers": "4.44.2",
+    "huggingface-hub": "0.36.2",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pyarrow": "21.0.0"
+  }
+}

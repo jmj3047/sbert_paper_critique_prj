@@ -1,0 +1,10 @@
+{
+  "bert": {
+    "repo": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "sbert": {
+    "repo": "sentence-transformers/bert-base-nli-mean-tokens",
+    "revision": "160a52b38a51ae87295ec3eabcf11755e5d27a8d"
+  }
+}
